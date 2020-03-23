@@ -1,0 +1,91 @@
+/* Définition des polices */
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Caveat|PT-Serif');
+
+html {
+	font-size: calc(1em + 1vw)
+}
+
+body {
+	margin: 0 auto;
+}
+
+header {
+	padding: 1px 15px 1px 15px;
+	background-color: #579c87;
+	color: #fdcb46;
+	text-align: center;
+}
+
+/* Taille du logo "ohmyfood" */
+#header-logo {
+	width: 5em;
+}
+
+footer {
+	position: -webkit-sticky;
+	position: sticky;
+	display: flex;
+	padding: 2.5vh;
+	bottom: 0;
+	background-color: #579c87;
+	justify-content: space-between;
+}
+
+.footer-section {
+	color: #fdcb46;
+	font-family: 'Lato', sans-serif;
+	font-size: calc(1vw + 10px);
+}
+
+
+
+
+/* Flexbox autour des petits menus */
+#small-menu-container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 2% 10%;
+}
+
+
+/* Mise en page du bouton "prochainement" */
+#button-container {
+	width: 36%;
+	margin: 0 auto;
+	margin-top: 60px;
+	margin-bottom: 40px;
+	padding: 9px 0 4px 0;
+	border-radius: 13px;
+	background-color: #579c87;
+	color: #fdcb46;
+	font-family: 'Montserrat', sans-serif;
+	font-size: calc(1.3vw + 8px);
+	text-align: center;
+	cursor: pointer;
+}
+
+/* Container des trois points */
+#loader-container {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: -18px;
+}
+
+/* Aspect des trois points */
+#loader-container span {
+	display: inline-block;
+	color: #fdcb46;
+	font-size: calc(2vw + 10px);
+	opacity: 0;
+}
+
+/* Aspect de la page "mentions légales" */
+#legal-container {
+	margin: 20px;
+	font-size: 0.5em;
+}
+
+
+
