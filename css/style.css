@@ -87,5 +87,199 @@ footer {
 	font-size: 0.5em;
 }
 
+/* Marges extérieures des grands menus */
+.big-menu-container {
+	padding: 60px 65px 100px 65px;
+	margin: 60px;
+}
+
+/* Variantes de couleurs de fond des grands menus */
+.big-menu-container--salmon-background {
+	background-color: #FCDFDB;
+}
+
+.big-menu-container--grey-background {
+	background-color: #EDEFEE;
+}
+
+.big-menu-container--pink-background {
+	padding: 60px 30px 100px 30px;
+	background-color: #FFF4FE;
+}
+
+.big-menu-logo {
+	display: block;
+	width: 12.5em;
+	margin: 0 auto;
+	padding: 5px 0 0 0;
+}
+
+/* Variantes de taille des logos des grands menus */
+.big-menu-logo--width-note-enchantee {
+	width: 7.1em;
+}
+
+.big-menu-logo--width-delice-papilles {
+	width: 12em;
+}
+
+.big-menu-logo--width-palette-gout {
+	width: 11em;
+}
+
+#note-enchantee-small-logo {
+	display: block;
+	width: 10em;
+	margin: 0 auto;
+	padding: 12% 0 5% 0;
+}
+
+.big-menu-border {
+	width: 26vw;
+	height: 2vw;
+	padding: 44px 0 0 0;
+}
+
+.big-menu-border--correction {
+	padding: 43px 0 0 0;
+}
+
+/* Padding des en-têtes des grands menus */
+.big-menu-subtitle {
+	padding: 5% 0 1% 0;
+}
+
+.big-menu-content {
+	font-size: 1em;
+	line-height: 200%;
+}
+
+.big-menu-content--small-font {
+	font-size: 115%;
+	line-height: 200%;
+}
+
+.big-menu-content--font1 {
+	color: #43191f;
+	font-family: 'Caveat', sans-serif;
+}
+
+.big-menu-content--font2 {
+	font-size: 0.85em;
+	font-family: 'PT Serif', serif;
+}
+
+.big-menu-content--dark-red {
+	color: #43191f;
+}
+
+/* Marges des paragraphes intérieurs des grands menu */
+.mini-container {
+	margin: 0 6vw 0 6vw;
+}
+
+/* Flexbox des plats et des en-têtes des grands menus */
+.menu-flex,
+.subtitle-flex {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+
+/* Style des prix des grands menus */
+.price {
+	font-weight: bolder;
+}
+
+/* menu "le chic à la française", couleurs des bordures */
+.chic-francaise--dark-orange {
+	color: #C67412;
+}
+
+.chic-francaise--magenta {
+	color: #A56799;
+}
+
+.chic-francaise--purple {
+	color: #6E4CCC;
+}
 
 
+
+@media screen and (max-width:768px) {
+	a.left_animation:before {
+		height: 2px;
+		bottom: 10px;
+	}
+
+	#header-logo {
+		width: 4em;
+	}
+
+	.small-menu-image {
+		width: 55vw;
+	}
+
+	#loader-container {
+		margin-top: -10px;
+	}
+
+	.menu-flex {
+		display: block;
+		text-align: center;
+	}
+
+	.subtitle-flex {
+		padding: 25px 0 25px 0;
+		justify-content: space-around;
+	}
+
+	.big-menu-content--small-font {
+		font-size: 100%;
+		line-height: 190%;
+	}
+
+	.mini-container {
+		margin: 0 auto;
+	}
+
+	.big-menu-container {
+		padding: 32px 14px 45px 14px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.big-menu-logo--width-delice-papilles {
+		width: 8.2em;
+	}
+
+	.big-menu-logo--width-note-enchantee {
+		width: 6em;
+	}
+
+	.big-menu-logo--width-chic-francaise {
+		width: 9em;
+	}
+
+	.big-menu-logo--width-palette-gout {
+		width: 8em;
+	}
+
+	#note-enchantee-small-logo {
+		width: 9em;
+		padding: 46px 0 0 0;
+	}
+
+	.big-menu-subtitle {
+		padding: 0;
+	}
+
+	.big-menu-border {
+		display: none;
+	}
+
+	#legal-container {
+		font-size: 12px;
+	}
+
+}
