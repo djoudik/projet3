@@ -2,326 +2,381 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Caveat|PT-Serif');
 
 html {
-	font-size: calc(1em + 1vw)
+    font-size: calc(1em + 1vw)
 }
 
 body {
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 header {
-	padding: 1px 15px 1px 15px;
-	background-color: #579c87;
-	color: #fdcb46;
-	text-align: center;
+    padding: 1px 15px 1px 15px;
+    background-color: #579c87;
+    color: #fdcb46;
+    text-align: center;
 }
 
 /* Taille du logo "ohmyfood" */
 #header-logo {
-	width: 5em;
+    width: 5em;
 }
 
 footer {
-	position: -webkit-sticky;
-	position: sticky;
-	display: flex;
-	padding: 2.5vh;
-	bottom: 0;
-	background-color: #579c87;
-	justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    display: flex;
+    padding: 2.5vh;
+    bottom: 0;
+    background-color: #579c87;
+    justify-content: space-between;
 }
 
 .footer-section {
-	color: #fdcb46;
-	font-family: 'Lato', sans-serif;
-	font-size: calc(1vw + 10px);
+    color: #fdcb46;
+    font-family: 'Lato', sans-serif;
+    font-size: calc(1vw + 10px);
 }
 
+/* Transition effet souligné */
+a.left_animation {
+	position: relative;
+	padding: 0 5px;
+}
+
+a.left_animation:before {
+	position: absolute;
+	width: 0;
+	height: 3px;
+	bottom: 20px;
+	left: 0;
+	background-color: #e69500;
+	content: "";
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition-duration: 0.55s;
+	transition-duration: 0.55s;
+}
+
+a.left_animation:hover:before {
+	width: 100%;
+	visibility: visible;
+	opacity: 1;
+}
+
+/* Flexbox autour des petits menus */
+#small-menu-container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 2% 10%;
+}
+
+/* Aspect des petits menus cliquables */
+.small-menu-image {
+	width: 30vw;
+	margin: 40px 0 0 0;
+	border: 1px solid lightgrey;
+	-webkit-transition: all ease 500ms;
+	transition: all ease 500ms;
+}
+
+/* Zoom et transparence au survol des petits menus */
+.small-menu-image:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+	opacity: 0.65;
+}
 /* Mise en page du bouton "prochainement" */
 #button-container {
-	width: 36%;
-	margin: 0 auto;
-	margin-top: 60px;
-	margin-bottom: 40px;
-	padding: 9px 0 4px 0;
-	border-radius: 13px;
-	background-color: #579c87;
-	color: #fdcb46;
-	font-family: 'Montserrat', sans-serif;
-	font-size: calc(1.3vw + 8px);
-	text-align: center;
-	cursor: pointer;
+    width: 36%;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding: 9px 0 4px 0;
+    border-radius: 13px;
+    background-color: #579c87;
+    color: #fdcb46;
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1.3vw + 8px);
+    text-align: center;
+    cursor: pointer;
 }
 
 /* Container des trois points */
 #loader-container {
-	display: block;
-	width: 100%;
-	margin: 0 auto;
-	margin-top: -18px;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -18px;
 }
 
 /* Aspect des trois points */
 #loader-container span {
-	display: inline-block;
-	color: #fdcb46;
-	font-size: calc(2vw + 10px);
-	opacity: 0;
+    display: inline-block;
+    color: #fdcb46;
+    font-size: calc(2vw + 10px);
+    opacity: 0;
 }
 
 /* Aspect de la page "mentions légales" */
 #legal-container {
-	margin: 20px;
-	font-size: 0.5em;
+    margin: 20px;
+    font-size: 0.5em;
 }
 
 /* Marges extérieures des grands menus */
 .big-menu-container {
-	padding: 60px 65px 100px 65px;
-	margin: 60px;
+    padding: 60px 65px 100px 65px;
+    margin: 60px;
 }
 
 /* Variantes de couleurs de fond des grands menus */
 .big-menu-container--salmon-background {
-	background-color: #FCDFDB;
+    background-color: #FCDFDB;
 }
 
 .big-menu-container--grey-background {
-	background-color: #EDEFEE;
+    background-color: #EDEFEE;
 }
 
 .big-menu-container--pink-background {
-	padding: 60px 30px 100px 30px;
-	background-color: #FFF4FE;
+    padding: 60px 30px 100px 30px;
+    background-color: #FFF4FE;
 }
 
 .big-menu-logo {
-	display: block;
-	width: 12.5em;
-	margin: 0 auto;
-	padding: 5px 0 0 0;
+    display: block;
+    width: 12.5em;
+    margin: 0 auto;
+    padding: 5px 0 0 0;
 }
 
 /* Variantes de taille des logos des grands menus */
 .big-menu-logo--width-note-enchantee {
-	width: 7.1em;
+    width: 7.1em;
 }
 
 .big-menu-logo--width-delice-papilles {
-	width: 12em;
+    width: 12em;
 }
 
 .big-menu-logo--width-palette-gout {
-	width: 11em;
+    width: 11em;
 }
 
 #note-enchantee-small-logo {
-	display: block;
-	width: 10em;
-	margin: 0 auto;
-	padding: 12% 0 5% 0;
+    display: block;
+    width: 10em;
+    margin: 0 auto;
+    padding: 12% 0 5% 0;
 }
 
 .big-menu-border {
-	width: 26vw;
-	height: 2vw;
-	padding: 44px 0 0 0;
+    width: 26vw;
+    height: 2vw;
+    padding: 44px 0 0 0;
 }
 
 .big-menu-border--correction {
-	padding: 43px 0 0 0;
+    padding: 43px 0 0 0;
 }
 
 /* Padding des en-têtes des grands menus */
 .big-menu-subtitle {
-	padding: 5% 0 1% 0;
+    padding: 5% 0 1% 0;
 }
 
 .big-menu-content {
-	font-size: 1em;
-	line-height: 200%;
+    font-size: 1em;
+    line-height: 200%;
 }
 
 .big-menu-content--small-font {
-	font-size: 115%;
-	line-height: 200%;
+    font-size: 115%;
+    line-height: 200%;
 }
 
 .big-menu-content--font1 {
-	color: #43191f;
-	font-family: 'Caveat', sans-serif;
+    color: #43191f;
+    font-family: 'Caveat', sans-serif;
 }
 
 .big-menu-content--font2 {
-	font-size: 0.85em;
-	font-family: 'PT Serif', serif;
+    font-size: 0.85em;
+    font-family: 'PT Serif', serif;
 }
 
 .big-menu-content--dark-red {
-	color: #43191f;
+    color: #43191f;
 }
 
 /* Marges des paragraphes intérieurs des grands menu */
 .mini-container {
-	margin: 0 6vw 0 6vw;
+    margin: 0 6vw 0 6vw;
 }
 
 /* Flexbox des plats et des en-têtes des grands menus */
 .menu-flex,
 .subtitle-flex {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 /* Style des prix des grands menus */
 .price {
-	font-weight: bolder;
+    font-weight: bolder;
 }
 
 /* menu "le chic à la française", couleurs des bordures */
 .chic-francaise--dark-orange {
-	color: #C67412;
+    color: #C67412;
 }
 
 .chic-francaise--magenta {
-	color: #A56799;
+    color: #A56799;
 }
 
 .chic-francaise--purple {
-	color: #6E4CCC;
+    color: #6E4CCC;
 }
 
 
 /* Animation "trois points" */
 @-webkit-keyframes points {
-	0% {
-		opacity: 0;
-	}
+    0% {
+        opacity: 0;
+    }
 
-	33% {
-		opacity: 1;
-	}
+    33% {
+        opacity: 1;
+    }
 
-	100% {
-		opacity: 0;
-	}
+    100% {
+        opacity: 0;
+    }
 
 }
 
 @keyframes points {
-	0% {
-		opacity: 0;
-	}
+    0% {
+        opacity: 0;
+    }
 
-	33% {
-		opacity: 1;
-	}
+    33% {
+        opacity: 1;
+    }
 
-	100% {
-		opacity: 0;
-	}
+    100% {
+        opacity: 0;
+    }
 
 }
+
 /* Animation des menu de la page index */
 .restaurant {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .restaurant__menu {
-    width: 45%;
-    margin: 1%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.restaurant__menu {
+    width: 35%;
+    margin: 5%;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    overflow: hidden; }
-    .restaurant__menu img {
-      width: 100%;
-      -webkit-transition: 0.2s ease;
-      transition: 0.2s ease; }
-      .restaurant__menu img:hover {
-        -webkit-transform: scalex(1.2);
-                transform: scalex(1.2);
-        opacity: 0.33; }
+    overflow: hidden;
+}
+
+.restaurant__menu img {
+    width: 100%;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+}
+
+.restaurant__menu img:hover {
+    -webkit-transform: scalex(1.2);
+    transform: scalex(1.2);
+    opacity: 0.33;
+}
 
 @media screen and (max-width:768px) {
-	a.left_animation:before {
-		height: 2px;
-		bottom: 10px;
-	}
+    a.left_animation:before {
+        height: 2px;
+        bottom: 10px;
+    }
 
-	#header-logo {
-		width: 4em;
-	}
+    #header-logo {
+        width: 4em;
+    }
 
-	.small-menu-image {
-		width: 55vw;
-	}
+    #loader-container {
+        margin-top: -10px;
+    }
 
-	#loader-container {
-		margin-top: -10px;
-	}
+    .menu-flex {
+        display: block;
+        text-align: center;
+    }
 
-	.menu-flex {
-		display: block;
-		text-align: center;
-	}
+    .subtitle-flex {
+        padding: 25px 0 25px 0;
+        justify-content: space-around;
+    }
 
-	.subtitle-flex {
-		padding: 25px 0 25px 0;
-		justify-content: space-around;
-	}
+    .big-menu-content--small-font {
+        font-size: 100%;
+        line-height: 190%;
+    }
 
-	.big-menu-content--small-font {
-		font-size: 100%;
-		line-height: 190%;
-	}
+    .mini-container {
+        margin: 0 auto;
+    }
 
-	.mini-container {
-		margin: 0 auto;
-	}
+    .big-menu-container {
+        padding: 32px 14px 45px 14px;
+        margin: 0 auto;
+        text-align: center;
+    }
 
-	.big-menu-container {
-		padding: 32px 14px 45px 14px;
-		margin: 0 auto;
-		text-align: center;
-	}
+    .big-menu-logo--width-delice-papilles {
+        width: 8.2em;
+    }
 
-	.big-menu-logo--width-delice-papilles {
-		width: 8.2em;
-	}
+    .big-menu-logo--width-note-enchantee {
+        width: 6em;
+    }
 
-	.big-menu-logo--width-note-enchantee {
-		width: 6em;
-	}
+    .big-menu-logo--width-chic-francaise {
+        width: 9em;
+    }
 
-	.big-menu-logo--width-chic-francaise {
-		width: 9em;
-	}
+    .big-menu-logo--width-palette-gout {
+        width: 8em;
+    }
 
-	.big-menu-logo--width-palette-gout {
-		width: 8em;
-	}
+    #note-enchantee-small-logo {
+        width: 9em;
+        padding: 46px 0 0 0;
+    }
 
-	#note-enchantee-small-logo {
-		width: 9em;
-		padding: 46px 0 0 0;
-	}
+    .big-menu-subtitle {
+        padding: 0;
+    }
 
-	.big-menu-subtitle {
-		padding: 0;
-	}
+    .big-menu-border {
+        display: none;
+    }
 
-	.big-menu-border {
-		display: none;
-	}
-
-	#legal-container {
-		font-size: 12px;
-	}
+    #legal-container {
+        font-size: 12px;
+    }
 
 }
