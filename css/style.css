@@ -249,6 +249,30 @@ footer {
 	}
 
 }
+/* Animation des menu de la page index */
+.restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .restaurant__menu {
+    width: 45%;
+    margin: 1%;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    overflow: hidden; }
+    .restaurant__menu img {
+      width: 100%;
+      -webkit-transition: 0.2s ease;
+      transition: 0.2s ease; }
+      .restaurant__menu img:hover {
+        -webkit-transform: scalex(1.2);
+                transform: scalex(1.2);
+        opacity: 0.33; }
 
 @media screen and (max-width:768px) {
 	a.left_animation:before {
