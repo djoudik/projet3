@@ -37,32 +37,6 @@ footer {
 	font-size: calc(1vw + 10px);
 }
 
-
-
-
-/* Flexbox autour des petits menus */
-#small-menu-container {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	margin: 2% 10%;
-}
-
-/* Aspect des petits menus */
-.small-menu-image {
-	width: 30vw;
-	margin: 40px 0 0 0;
-	border: 1px solid lightgrey;
-	-webkit-transition: all ease 500ms;
-	transition: all ease 500ms;
-}
-
-/* Zoom et transparence au survol des petits menus */
-.small-menu-image:hover {
-	-webkit-transform: scale(1.3);
-	transform: scale(1.3);
-	opacity: 0.65;
-}
 /* Mise en page du bouton "prochainement" */
 #button-container {
 	width: 36%;
