@@ -120,6 +120,22 @@ a.left_animation:hover:before {
     opacity: 0;
 }
 
+/* Animation des trois points */
+#loader-container span:nth-child(1) {
+	-webkit-animation: points 1.5s 300ms infinite ease-in-out;
+	animation: points 1.5s 300ms infinite ease-in-out;
+}
+
+#loader-container span:nth-child(2) {
+	-webkit-animation: points 1.5s 400ms infinite ease-in-out;
+	animation: points 1.5s 400ms infinite ease-in-out;
+}
+
+#loader-container span:nth-child(3) {
+	-webkit-animation: points 1.5s 500ms infinite ease-in-out;
+	animation: points 1.5s 500ms infinite ease-in-out;
+}
+
 /* Aspect de la page "mentions légales" */
 #legal-container {
     margin: 20px;
