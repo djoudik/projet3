@@ -1,53 +1,61 @@
-@font-face { /* police menu 1*/
+@font-face {
+    /* police menu 1*/
     font-family: 'devonshire';
     src: url('../polices/devonshire-regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face { /* police menu 1*/
+@font-face {
+    /* police menu 1*/
     font-family: 'KGPrimary';
     src: url('../polices/KGPrimaryItalics.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face { /* police menu 2*/
+@font-face {
+    /* police menu 2*/
     font-family: 'croissantone';
     src: url('../polices/croissantone-regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face { /* police menu 2*/
+@font-face {
+    /* police menu 2*/
     font-family: 'kameron';
     src: url('../polices/kameron-regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face { /* police menu 3*/
+@font-face {
+    /* police menu 3*/
     font-family: 'dancing';
     src: url('../polices/dancing-script.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face { /* police menu 3*/
+@font-face {
+    /* police menu 3*/
     font-family: 'worstveldsling';
     src: url('../polices/worstveldsling.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face { /* police menu 4*/
+@font-face {
+    /* police menu 4*/
     font-family: 'kaushanscript';
     src: url('../polices/kaushanscript-regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face { /* police menu 34*/
+@font-face {
+    /* police menu 34*/
     font-family: 'typo_comics';
     src: url('../polices/typo_comics_light.otf') format('truetype');
     font-weight: normal;
@@ -59,10 +67,10 @@ html {
 }
 
 body {
-     display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    font-family: 'Caveat', Lato, Montserrat, serif ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'typo_comics', 'kaushanscript', 'worstveldsling', 'dancing', 'kameron', 'croissantone', 'KGPrimary', 'devonshire', Lato, Montserrat, serif;
 }
 
 header {
@@ -76,6 +84,7 @@ header {
 #header-logo {
     width: 5em;
 }
+
 .gallery {
     display: flex;
     flex-direction: row;
@@ -90,7 +99,7 @@ header {
     width: 38.3%;
     text-align: center;
     margin: 100px auto 0;
-    box-shadow: 0 0 25px  5px rgb(224,224,224);
+    box-shadow: 0 0 25px 5px rgb(224, 224, 224);
 }
 
 .gallery a {
@@ -115,111 +124,110 @@ header {
 }
 
 #menu1 {
-    background-color: rgb(252,223,219);
+    background-color: rgb(252, 223, 219);
 }
 
-#menu1 h1 {
+#menu1 h2 {
     font-family: 'devonshire';
     font-weight: normal;
     font-size: 2rem;
-    color: rgb(61,19,25);
+    color: rgb(61, 19, 25);
     line-height: 3rem;
     margin: 0;
 }
 
 #menu1 i {
     font-size: 3rem;
-    color: rgb(240,88,97);
+    color: rgb(240, 88, 97);
     margin-top: 255px;
 }
 
-#menu1 h2 {
+#menu1 h3 {
     text-transform: uppercase;
     font-family: 'KGPrimary';
     font-weight: normal;
     font-size: 2rem;
-    color: rgb(61,19,25);
+    color: rgb(61, 19, 25);
     margin-top: 40px;
     padding-bottom: 190px;
 }
 
 #menu2 {
-    background-color: rgb(255,245,254);
+    background-color: rgb(255, 245, 254);
 }
 
-#menu2 h1 {
+#menu2 h2 {
     font-family: 'croissantone';
     font-weight: normal;
-    font-size: 2rem;
+    font-size: 1, 5rem;
     background-image: linear-gradient(to right, #df871e, #8f5bfe);
- 
-    -webkit-background-clip: text; 
+    background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     margin: 300px 0 0;
 }
 
-#menu2 h2 {
+#menu2 h3 {
     text-transform: capitalize;
     font-family: 'kameron';
     font-weight: bold;
     font-size: 2rem;
-    color: rgb(198,116,18);
+    color: rgb(198, 116, 18);
     margin-top: 30px;
     padding-bottom: 190px;
 }
 
 #menu3 {
-    background-color: rgb(237,239,239);
+    background-color: rgb(237, 239, 239);
 }
 
-#menu3 h1 {
+#menu3 h2 {
     font-family: 'dancing';
     font-weight: normal;
-    font-size:2rem;
-    background-image: linear-gradient(135deg, rgb(0,34,219), rgb(8,137,251));
-   
-    -webkit-background-clip: text; 
+    font-size: 2rem;
+    background-image: linear-gradient(135deg, rgb(0, 34, 219), rgb(8, 137, 251));
+    background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     margin: 270px 0 0;
 }
 
-#menu3 h2 {
+#menu3 h3 {
     text-transform: capitalize;
     font-family: 'worstveldsling';
     font-weight: bold;
     font-size: 2rem;
-    color: rgb(8,137,251);
+    color: rgb(8, 137, 251);
     margin-top: 50px;
     padding-bottom: 210px;
 }
 
 #menu4 {
-    background-color: rgb(253,255,253);
+    background-color: rgb(253, 255, 253);
 }
 
-#menu4 h1 {
+#menu4 h2 {
     font-family: 'kaushanscript';
     font-size: 2rem;
     font-weight: normal;
-    background-image: linear-gradient(135deg, rgb(61,146,58), rgb(190,255,127));
-   
-    -webkit-background-clip: text; 
+    background-image: linear-gradient(135deg, rgb(61, 146, 58), rgb(190, 255, 127));
+    background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     margin: 290px 0 0;
 }
 
-#menu4 h2 {
+#menu4 h3 {
     text-transform: capitalize;
     font-family: 'typo_comics';
     font-weight: normal;
     font-size: 2rem;
-    color: rgb(61,146,58);
+    color: rgb(61, 146, 58);
     margin-top: 35px;
     padding-bottom: 210px;
 }
 
-/* Marges ex des grands menus */
-.big-menu-container {
+* Marges extérieures des grands menus */ .big-menu-container {
     padding: 60px 65px 100px 65px;
     margin: 60px;
 }
@@ -292,7 +300,7 @@ header {
 
 .big-menu-content--font1 {
     color: #43191f;
-    font-family: 'Caveat', sans-serif;
+    font-family: 'KGPrimary', sans-serif;
 }
 
 .big-menu-content--font2 {
@@ -334,6 +342,7 @@ header {
 .chic-francaise--purple {
     color: #6E4CCC;
 }
+
 footer {
     position: -webkit-fixed;
     position: sticky;
@@ -369,7 +378,7 @@ a.left_animation {
     padding: 0 5px;
 }
 
-a.left_animation:before {
+a.left_animation::before {
     position: absolute;
     width: 0;
     height: 3px;
@@ -385,35 +394,43 @@ a.left_animation:before {
     transition-duration: 0.55s;
 }
 
-a.left_animation:hover:before {
+a.left_animation:hover::before {
     width: 100%;
     visibility: visible;
     opacity: 1;
 }
 
-#note:hover .fas{
+#note:hover .fas {
     animation: zoomicone 1s forwards;
 }
-#note:hover h2{
+
+#note:hover h2 {
     animation: zoomh2 1s forwards;
 }
-#note:hover strong{
+
+#note:hover strong {
     animation: zoomstrong 1s forwards;
 }
-#chic:hover h2{
+
+#chic:hover h2 {
     animation: zoomh2chic 1s forwards;
 }
-#chic:hover strong{
+
+#chic:hover strong {
     animation: zoomstrong 1s forwards;
 }
-#delice:hover h2, #palette:hover h2{
+
+#delice:hover h2,
+#palette:hover h2 {
     animation: zoomh2delicepalette 1s forwards;
 }
-#delice:hover strong, #palette:hover strong{
+
+#delice:hover strong,
+#palette:hover strong {
     animation: zoomstrong 1s forwards;
 }
-@keyframes zoomicone
-{
+
+@keyframes zoomicone {
     0% {
         font-size: 60px;
     }
@@ -422,8 +439,8 @@ a.left_animation:hover:before {
         font-size: 130px;
     }
 }
-@keyframes zoomh2
-{
+
+@keyframes zoomh2 {
     0% {
         font-size: 40px;
     }
@@ -432,8 +449,8 @@ a.left_animation:hover:before {
         font-size: 60px;
     }
 }
-@keyframes zoomh2chic
-{
+
+@keyframes zoomh2chic {
     0% {
         font-size: 26px;
     }
@@ -442,8 +459,8 @@ a.left_animation:hover:before {
         font-size: 35px;
     }
 }
-@keyframes zoomh2delicepalette
-{
+
+@keyframes zoomh2delicepalette {
     0% {
         font-size: 30px;
     }
@@ -452,8 +469,8 @@ a.left_animation:hover:before {
         font-size: 44px;
     }
 }
-@keyframes zoomstrong
-{
+
+@keyframes zoomstrong {
     0% {
         font-size: 76px;
     }
@@ -529,6 +546,7 @@ a.left_animation:hover:before {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    
 }
 
 /* Style des prix des grands menus */
@@ -650,8 +668,9 @@ a.left_animation:hover:before {
     opacity: 0.33;
 }
 
+/*
 @media screen and (max-width:768px) {
-    a.left_animation:before {
+    a.left_animation::before {
         height: 2px;
         bottom: 10px;
     }
@@ -660,7 +679,7 @@ a.left_animation:hover:before {
         width: 4em;
     }
 
-    @media all  and (min-width: 1440px)
+    @media screen  and (max-width: 1440px)
 {
     section
     {
@@ -678,77 +697,72 @@ a.left_animation:hover:before {
         margin-bottom: 80px;
     }
 }
+*/
 
-@media all  and (min-width: 786px)and (max-width: 1024px) 
-{
+@media screen and (max-width: 1024px) {
 
-    header
-    {
+    header {
         height: 150px;
     }
 
-    
-    }
-@media all and (max-width: 785px) 
-{
-    header
-    {
-        height: 100px;
-    }
-    section
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    h1
-    {
-        font-size: 3.2em;
-    }
-    article
-    {
-        margin: auto;
-        width: 335px;
-        height: 559px; 
-    }
 
-    #note #chic #delice
-    {
-        margin-bottom: 80px;
-    }
+
+    @media screen and (max-width: 785px) {
+        header {
+            height: 150px;
+
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 3.2em;
+        }
+
+        .big-menu-logo {
+            width: 6.5em !important;
+        }
+
      
-    aside 
-    {
-        width: 50%;
-        height: 50px;
-        font-size: 1em;
-    }
 
-    footer
-    {
-        height: 50px;
-    }
+        footer {
+            height: 50px;
+        }
 
-    .wiggle span
-    {
-        font-size: 10px;
-    }
+        .wiggle span {
+            font-size: 10px;
+        }
 
-    #mentions h1
-    {
-        font-size: 2em;
+        #mentions h1 {
+            font-size: 2em;
+        }
     }
-}
 
     .big-menu-subtitle {
         padding: 0;
     }
 
-    .big-menu-border {
-        display: none;
-    }
+    
 
     #legal-container {
         font-size: 12px;
     }
+
+.gallery li {
+    list-style-type: none;
+    width: 400px;
+    height:700px;
+    text-align:center;
+    margin: 50px 60px 20px;
+    box-shadow: 0 0 25px 5px rgb(224, 224, 224);
+    
+}
+   
+.gallery a {
+    text-decoration: none;
+}
 
 }
