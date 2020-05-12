@@ -121,16 +121,16 @@ header {
 #menu1 h2 {
     font-family: 'devonshire';
     font-weight: normal;
-    font-size: 2rem;
+    font-size: 3rem;
     color: rgb(61,19,25);
     line-height: 3rem;
-    margin: 0;
+    margin-top: 10%;
 }
 
 #menu1 i {
     font-size: 3rem;
     color: rgb(240,88,97);
-    margin-top: 255px;
+    margin-top: 20%;
 }
 
 #menu1 h3 {
@@ -652,17 +652,9 @@ a.left_animation:hover:before {
 
 
 
-@media screen and (max-width:768px) {
-    a.left_animation:before {
-        height: 2px;
-        bottom: 10px;
-    }
 
-    #header-logo {
-        width: 4em;
-    }
 
-    @media all  and (min-width: 1440px)
+    @media screen  and (max-width: 1440px)
 {
     section
     {
@@ -681,16 +673,7 @@ a.left_animation:hover:before {
     }
 }
 
-@media all  and (min-width: 786px)and (max-width: 1024px) 
-{
 
-    header
-    {
-        height: 150px;
-    }
-
-    
-    }
 @media screen and (max-width:736px) {
 	
     
@@ -703,16 +686,65 @@ a.left_animation:hover:before {
 	#header-logo {
 		width: 4em;
 	}
-ul
-    {
-      
-        height: 100px;
-        width: 350px;
-    }
-   li
-    {
-        height: 200px; 
-    }
+.gallery li {
+    text-align: center;
+    margin: 50px 50px 0;
+    width: 300px;
+    height: 300px;
+}
+#menu1 h2 {
+    font-size: 1,5rem;
+    margin-top: 5%;
+}
+
+#menu1 i {
+    font-size: 3rem;
+    margin-top: 10%;
+}
+
+#menu1 h3 {
+    font-size: 1rem;
+    margin-top: 20%;
+    padding-bottom: 10%;
+}
+
+
+#menu2 h2 {
+    font-size: 1rem;
+    margin: 20%;
+}
+
+#menu2 h3 {
+   
+    font-size: 1rem;
+    margin-top: 20%;
+    
+}
+
+#menu3 h2 {
+    font-size:2rem;
+    margin-top: 20%
+}
+
+#menu3 h3 {
+    font-size: 2rem;
+    margin-top: 50px;
+    padding-bottom: 210px;
+}
+
+#menu4 h2 {
+    
+    font-size: 1,4rem;
+    margin-top: 20%
+}
+
+#menu4 h3 {
+   
+    font-size: 1rem;
+    margin-top: 35px;
+    padding-bottom: 210px;
+}
+
 
 	.menu-flex {
 		display: block;
@@ -771,6 +803,6 @@ ul
 footer
     {
         position: fixed;
-        width: 330px;
+        width: 425px;
     }
 }
