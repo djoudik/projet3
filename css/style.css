@@ -62,7 +62,7 @@ body {
      display:flex;
     flex-direction:column;
     justify-content:space-between;
-    font-family: 'Caveat', Lato, Montserrat, serif ;
+    font-family: 'devonshire', 'KGPrimary','croissantone','kameron','dancing','worstveldsling', 'kaushanscript','typo_comics', serif ;
 }
 
 header {
@@ -118,7 +118,7 @@ header {
     background-color: rgb(252,223,219);
 }
 
-#menu1 h1 {
+#menu1 h2 {
     font-family: 'devonshire';
     font-weight: normal;
     font-size: 2rem;
@@ -133,7 +133,7 @@ header {
     margin-top: 255px;
 }
 
-#menu1 h2 {
+#menu1 h3 {
     text-transform: uppercase;
     font-family: 'KGPrimary';
     font-weight: normal;
@@ -147,7 +147,7 @@ header {
     background-color: rgb(255,245,254);
 }
 
-#menu2 h1 {
+#menu2 h2 {
     font-family: 'croissantone';
     font-weight: normal;
     font-size: 2rem;
@@ -158,7 +158,7 @@ header {
     margin: 300px 0 0;
 }
 
-#menu2 h2 {
+#menu2 h3 {
     text-transform: capitalize;
     font-family: 'kameron';
     font-weight: bold;
@@ -172,7 +172,7 @@ header {
     background-color: rgb(237,239,239);
 }
 
-#menu3 h1 {
+#menu3 h2 {
     font-family: 'dancing';
     font-weight: normal;
     font-size:2rem;
@@ -183,7 +183,7 @@ header {
     margin: 270px 0 0;
 }
 
-#menu3 h2 {
+#menu3 h3 {
     text-transform: capitalize;
     font-family: 'worstveldsling';
     font-weight: bold;
@@ -197,7 +197,7 @@ header {
     background-color: rgb(253,255,253);
 }
 
-#menu4 h1 {
+#menu4 h2 {
     font-family: 'kaushanscript';
     font-size: 2rem;
     font-weight: normal;
@@ -208,7 +208,7 @@ header {
     margin: 290px 0 0;
 }
 
-#menu4 h2 {
+#menu4 h3 {
     text-transform: capitalize;
     font-family: 'typo_comics';
     font-weight: normal;
@@ -650,6 +650,8 @@ a.left_animation:hover:before {
     opacity: 0.33;
 }
 
+
+
 @media screen and (max-width:768px) {
     a.left_animation:before {
         height: 2px;
@@ -689,66 +691,86 @@ a.left_animation:hover:before {
 
     
     }
-@media all and (max-width: 785px) 
-{
-    header
+@media screen and (max-width:736px) {
+	
+    
+    
+    a.left_animation:before {
+		height: 2px;
+		bottom: 10px;
+	}
+
+	#header-logo {
+		width: 4em;
+	}
+ul
     {
+      
         height: 100px;
+        width: 350px;
     }
-    section
+   li
     {
-        display: flex;
-        flex-direction: column;
-    }
-    h1
-    {
-        font-size: 3.2em;
-    }
-    article
-    {
-        margin: auto;
-        width: 335px;
-        height: 559px; 
+        height: 200px; 
     }
 
-    #note #chic #delice
+	.menu-flex {
+		display: block;
+		text-align: center;
+	}
+
+	.subtitle-flex {
+		padding: 25px 0 25px 0;
+		justify-content: space-around;
+	}
+
+	.big-menu-content--small-font {
+		font-size: 100%;
+		line-height: 190%;
+	}
+
+	.mini-container {
+		margin: 0 auto;
+	}
+
+	.big-menu-container {
+		padding: 32px 14px 45px 14px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.big-menu-logo--width-delice-papilles {
+		width: 8.2em;
+	}
+
+	.big-menu-logo--width-note-enchantee {
+		width: 6em;
+	}
+
+	.big-menu-logo--width-chic-francaise {
+		width: 9em;
+	}
+
+	.big-menu-logo--width-palette-gout {
+		width: 8em;
+	}
+
+	#note-enchantee-small-logo {
+		width: 9em;
+		padding: 46px 0 0 0;
+	}
+
+	.big-menu-subtitle {
+		padding: 0;
+	}
+
+
+	#legal-container {
+		font-size: 12px;
+	}
+footer
     {
-        margin-bottom: 80px;
+        position: fixed;
+        width: 330px;
     }
-     
-    aside 
-    {
-        width: 50%;
-        height: 50px;
-        font-size: 1em;
-    }
-
-    footer
-    {
-        height: 50px;
-    }
-
-    .wiggle span
-    {
-        font-size: 10px;
-    }
-
-    #mentions h1
-    {
-        font-size: 2em;
-    }
-}
-
-    .big-menu-subtitle {
-        padding: 0;
-    }
-
-    .big-menu-border {
-        display: none;
-    }
-
-    #legal-container {
-        font-size: 12px;
-    }
-
 }
