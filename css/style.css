@@ -335,13 +335,13 @@ header {
     color: #6E4CCC;
 }
 footer {
-    position: -webkit-fixed;
+    /*position: -webkit-fixed;*/
     position: sticky;
     display: flex;
-    padding: 2.5vh;
+    padding: 24px 0;
     bottom: 0;
     background-color: #579c87;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .footer-section {
@@ -734,13 +734,13 @@ a.left_animation:hover:before {
 
 #menu4 h2 {
     
-    font-size: 1,4rem;
+    font-size: 1,5rem;
     margin-top: 20%
 }
 
 #menu4 h3 {
    
-    font-size: 1rem;
+    font-size: 1,2rem;
     margin-top: 35px;
     padding-bottom: 210px;
 }
@@ -802,7 +802,6 @@ a.left_animation:hover:before {
 	}
 footer
     {
-        position: fixed;
-        width: 425px;
+        width: 100%;
     }
 }
